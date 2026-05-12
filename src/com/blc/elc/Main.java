@@ -1,4 +1,4 @@
-package com.blcandelc;
+package com.blc.elc;
 import java.util.*;
 public class Main {
 
@@ -8,21 +8,29 @@ public class Main {
 		        
 		        System.out.print("Enter Student Name: ");
 		        String name = sc.nextLine();
+		        
 
 		        System.out.print("Enter Student ID: ");
 		        int id = sc.nextInt();
+		        
+		        
+		       
 		        sc.nextLine();
-
 		        System.out.print("Enter Course Name: ");
 		        String course = sc.nextLine();
+		        
 
 		        System.out.print("Enter First Subject Marks: ");
+		        
 		        double firstMarks = sc.nextDouble();
+		       
 
 		       
 		        StudentResult student = new StudentResult(name, id, course, firstMarks);
+		        
+		      
 
-		       
+                    		       
 		        int option;
 		        boolean result = true;
 		        while(result) {

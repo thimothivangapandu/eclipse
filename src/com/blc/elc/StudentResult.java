@@ -1,11 +1,13 @@
-package com.blcandelc;
+package com.blc.elc;
 
 public class StudentResult {
+	//instance variables
 	String studentName;
 	int studentId;
 	String courseName;
 	double totalMarks;
 	
+	//parameterized constructor
 	public StudentResult(String studentName,int studentId,String courseName,double totalMarks ) {
 		this.studentName=studentName;
 		this.studentId=studentId;

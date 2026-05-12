@@ -23,6 +23,7 @@ class Car extends Vehicle{
 	        super(make, model, year); 
 	        this.numberOfDoors = numberOfDoors;
 	    }
+	 
 	public void displayCarInfo() {
 		
 		System.out.println("Number of doors: " +numberOfDoors);
@@ -63,9 +64,14 @@ class Motorcycle extends Vehicle{
 public class Example1 {
 
 	public static void main(String[] args) {
-		Vehicle car = new Car("Toyota", "Corolla", 2022, 4);
+		Vehicle car= new Car("Toyota", "Corolla", 2022, 4);
 		car.displayInfo();
-		((Car) car).displayCarInfo();
+		((Car) car).displayCarInfo();//direct downcasting and calling the car method
+		
+//		Vehicle vh = new Car("Toyata","Corolla",2022,4);
+//		vh.displayInfo();
+//		Car c = (Car)vh; downcasting
+//		c.displayCarInfo();
 		
 		System.out.println("------------------------");
 		Vehicle truck = new Truck("Ford", "F-150", 2021, 1000);
